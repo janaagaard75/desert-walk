@@ -1,4 +1,4 @@
-import { computed, observable } from "mobx"
+import { computed, makeObservable, observable } from "mobx"
 import { observer } from "mobx-react"
 import * as React from "react"
 import { Component } from "react"
@@ -29,6 +29,8 @@ interface State {
 export class PositionedCardView extends Component<Props> {
   public constructor(props: Props) {
     super(props)
+
+    makeObservable<PositionedCardView, "visualState" | "draggable">(this)
 
     this.visualState = VisualState.Idle
 
