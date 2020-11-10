@@ -116,6 +116,8 @@ export class PositionedCardView extends Component<Props> {
           transform: [
             {
               translateX: this.animatedPosition.x,
+            },
+            {
               translateY: this.animatedPosition.y,
             },
           ],

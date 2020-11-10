@@ -15,6 +15,7 @@
     "skipLibCheck": true,
     "strict": true,
     "strictFunctionTypes": false,
-    "target": "esnext"
+    "target": "esnext",
+    "useDefineForClassFields": true
   }
 }
